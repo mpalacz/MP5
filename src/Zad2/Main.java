@@ -1,12 +1,20 @@
 package Zad2;
 
 public class Main {
-    public static void main(String args[]){
+    public static void main(String args[]) {
         int[] array = new int[10];
-        for (int i = 0; i < array.length; i++)
-            array[i] = (int)(Math.random() * (100 - 1)) + 1;
+        int min = 100;
+        int max = 0;
+        for (int i = 0; i < array.length; i++) {
+            array[i] = (int) (Math.random() * (100 - 1)) + 1;
+            if (array[i] < min) min = array[i];
+            if (array[i] > max) max = array[i];
+        }
 
         for (int i = 0; i < array.length; i++)
             System.out.println(array[i]);
+
+        System.out.println("Min: " + min);
+        System.out.println("Max: " + max);
     }
 }
