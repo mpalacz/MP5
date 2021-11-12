@@ -19,6 +19,6 @@ public class Main {
             System.out.print("\n");
         }
 
-        System.out.println("\nSuma przekatnej: " + suma);
+        System.out.println("Suma przekatnej: " + suma);
     }
 }
